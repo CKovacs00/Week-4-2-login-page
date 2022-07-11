@@ -1,0 +1,35 @@
+
+<!--the input of the new webpage-->
+    <!DOCTYPE html>
+<html>
+    <head>
+        <!--linking the other pages for this assingment to the main code-->
+        <script src="loginCode.js"></script>
+        <!--linking the style code to the webpage-->
+        <link rel="styleSheet" href="LoginStyle.Css">
+        <!--webspace title-->
+        <title>
+            UAT Space Login Page
+        </title>
+    </head>
+    <!--main title of the webpage-->
+    <body>
+        <h1>Welcome the the UAT Space Login Page</h1>
+        Please log in below<br>
+        <br>
+        <!--defining loginstatus for when someone logs in-->
+        <div id="loginStatus">Login Status</div><br>
+        <br>
+        <!-- creates the variables for submiting the information and how to return it-->
+        <form id="creditSubmit" onsubmit="return false">
+        First Name: <input type="text" id="fName"> <br>
+        Last Name: <input type="text" id="lName"> <br>
+        Badge Number: <input type="number" id="badgeID"><br>
+        <br>
+        <!--starting the function for the checkcreds on jscode-->
+        <input type="submit" onclick="checkCreds();" class="button">
+
+        </form>
+    </body>
+
+</html>
